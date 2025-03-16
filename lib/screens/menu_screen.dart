@@ -1,5 +1,6 @@
 import 'package:animation_challenge/screens/explicit_animation_screen.dart';
 import 'package:animation_challenge/screens/implicit_animation_screen.dart';
+import 'package:animation_challenge/screens/pomodoro_screen.dart';
 import 'package:flutter/material.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -38,6 +39,15 @@ class MenuScreen extends StatelessWidget {
                 );
               },
               child: Text('Explicit Animation'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(
+                  context,
+                  const PomodoroScreen(),
+                );
+              },
+              child: Text('Pomodoro'),
             ),
           ],
         ),
