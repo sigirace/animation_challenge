@@ -1,5 +1,6 @@
 import 'package:animation_challenge/screens/explicit_animation_screen.dart';
 import 'package:animation_challenge/screens/implicit_animation_screen.dart';
+import 'package:animation_challenge/screens/slamdunk_screen.dart';
 import 'package:animation_challenge/screens/pomodoro_screen.dart';
 import 'package:animation_challenge/screens/swapping_cards_screen.dart';
 import 'package:flutter/material.dart';
@@ -58,6 +59,15 @@ class MenuScreen extends StatelessWidget {
                 );
               },
               child: Text('Swap Card'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(
+                  context,
+                  SlamDunkScreen(),
+                );
+              },
+              child: Text('Slam Dunk'),
             ),
           ],
         ),
